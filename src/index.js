@@ -5,20 +5,31 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            lat: null
+            lat: null,
+            errorMessage: ""
         };
         window.navigator.geolocation.getCurrentPosition(
             position => {
-                this.setState({ lat: position.coords.latitude });
+                this.setState({
+                    lat: position.coords.latitude,
+                    errorMessage: ""
+                });
             },
-            err => console.log(err)
+            err => {
+                this.setState({ errorMessage: err.message, lat: null });
+            }
         );
     }
     componentDidUpdate() {}
     render() {
-        const { lat } = this.state;
-
-        return <div>Latitude: {lat}</div>;
+        const { lat, errorMessage } = this.state;
+        return (
+            <div>
+                {!lat && !errorMessage ? <span>Loading...</span> : null}
+                {lat && <span> Latitude: {lat}</span>}
+                {errorMessage && <span> Error: {errorMessage}</span>}
+            </div>
+        );
     }
 }
 
