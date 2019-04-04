@@ -12,5 +12,5 @@ If you allow access to your Location, you'll get a nice background based on the 
 ## Screen shots
 
 !["Basic Spinner"](https://github.com/rafrocha/react-simple-weather/blob/master/public/img/Screen%20Shot%202019-04-03%20at%2010.54.42%20PM.png?raw=true)
-!["Summer"](https://github.com/rafrocha/react-simple-weather/blob/master/public/img/Screen%20Shot%202019-04-03%20at%2010.54.42%20PM.png?raw=true)
+!["Summer"](https://github.com/rafrocha/react-simple-weather/blob/master/public/img/Screen%20Shot%202019-04-03%20at%2010.55.05%20PM.png?raw=true)
 !["Winter"](https://github.com/rafrocha/react-simple-weather/blob/master/public/img/Screen%20Shot%202019-04-03%20at%2010.55.29%20PM.png?raw=true)
